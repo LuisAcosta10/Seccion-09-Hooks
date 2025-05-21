@@ -12,4 +12,9 @@ export default defineConfig({
       protocol: 'ws', // Usa WebSockets para HMR
     },
   },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/setupTests.js', // Asegúrate de crear este archivo
+  },
 })
